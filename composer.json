@@ -1,0 +1,41 @@
+{
+    "name": "osi-open-source/warcott-client",
+    "description": "Warcott API client",
+    "license": "OSI",
+    "authors": [
+        {
+            "name": "OSI WebTeam",
+            "email": "webteam@objectsystems.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": ">=5.5.0",
+        "guzzlehttp/guzzle": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "guzzlehttp/psr7": "*",
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Warcott\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Warcott\\Support\\LaravelServiceProvider"
+            ],
+            "aliases": {
+                "WarcottClient": "Warcott\\Support\\Facades\\WarcottClient"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
