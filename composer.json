@@ -1,7 +1,7 @@
 {
     "name": "osi-open-source/warcott-client",
     "description": "Warcott API client",
-    "license": "OSI",
+    "license": "MIT",
     "authors": [
         {
             "name": "OSI WebTeam",
